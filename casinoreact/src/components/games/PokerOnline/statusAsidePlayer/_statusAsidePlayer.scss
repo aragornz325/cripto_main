@@ -1,0 +1,48 @@
+.statusAsidePlayer {
+    
+    &__text {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+        transform: rotate(-30deg) skew(-15deg);    
+        animation: stamp 0.3s ease-in;
+    }
+}
+
+.redFolded {
+        color: red;
+    }
+.greenAllIn {
+        color: green;
+    }
+
+
+@keyframes stamp {
+    from {
+        opacity: 0;
+        transform: rotate(-30deg) skew(-15deg) scale(1.5);    
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotate(-30deg) skew(-15deg) scale(1);    
+
+    }
+}
+
+.statusAsidePlayer-1 {
+    z-index: 3 !important;
+    transform: translate(-10%, -10%);
+}
+.statusAsidePlayer-2 {
+    z-index: 3 !important;
+    transform: translate(-15%, 10%);    
+}
+.statusAsidePlayer-3 {
+    z-index: 3 !important;
+    transform: translate(-85%, 10%);
+}
+.statusAsidePlayer-4 {
+    z-index: 3 !important;
+    transform: translate(-80%, -10%);    
+}

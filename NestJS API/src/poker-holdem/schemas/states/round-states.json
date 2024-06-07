@@ -1,0 +1,23 @@
+[
+    {
+        "_id": 1,
+        "name": "pre-flop",
+        "description": "When game starts. A dealer is setted. Starts next player.  Each player receives 2 cards and BET ROUND starts."
+    },{
+        "_id": 2,
+        "name": "flop",
+        "description": "Three communitary cards on table. New BET ROUND"
+    },{
+        "_id": 3,
+        "name": "turn",
+        "description": "Four communitary cards on table. New BET ROUND"
+    },{
+        "_id": 4,
+        "name": "river",
+        "description": "Five communitary cards on table. New BET ROUND"
+    },{
+        "_id": 5,
+        "name": "finish",
+        "description": "Round finished"
+    }
+]

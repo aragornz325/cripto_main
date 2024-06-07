@@ -1,0 +1,65 @@
+.pokerFullScreen {
+    height: 100%;
+    padding: 1%;
+    background-color: #051441;
+}
+
+.tableFullScreen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+
+    &__background {
+        position: absolute;
+        top: 10%;
+        width: 80%;
+        height: 70%;
+    }
+
+    &-player {
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        position: absolute;
+        z-index: 2;
+        transform: scale(1.2);
+    }
+}
+
+.playerFullScreen-0 {
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+        top: 50%!important;
+        left: 50%!important;
+        transform: scale(1.5) translate(-50%, -50%)!important;
+    }
+
+    img:nth-child(2) {
+        top: calc(50% + 10px)!important;
+        left: calc(50% + 30px)!important;
+        transform: scale(1.5) translate(-50%, -50%)!important;
+    }
+}
+
+.pokerTableFullScreen {
+    z-index: 10;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.asidePlayerFullScreen {
+    transform: translate(-18%, 15%) scale(1.2);
+    height: 85%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

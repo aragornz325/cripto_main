@@ -1,0 +1,33 @@
+[
+    {
+        "_id": 1,
+        "name": "small-blind",
+        "description": "Obligatory first bet. Normally is half than entry price",
+        "betActions": [1]
+    },{
+        "_id": 2,
+        "name": "big-blind",
+        "description": "Obligatory second bet. Normally double than small blind",
+        "betActions": [2]
+    },{
+        "_id": 3,
+        "name": "lower",
+        "description": "Player either hasn't bet yet or his last bet is lower than current bet",
+        "betActions": [3,4,6,7]
+    },{
+        "_id": 4,
+        "name": "even",
+        "description": "Player's last bet has tied the current bet",
+        "betActions": [4,5,6,7]
+    },{
+        "_id": 5,
+        "name": "all-in",
+        "description": "Player has betted all his founds an cannot raise the bet",
+        "betActions": []
+    },{
+        "_id": 6,
+        "name": "folded",
+        "description": "Player has folded and retired for current round",
+        "betActions": []
+    }
+]

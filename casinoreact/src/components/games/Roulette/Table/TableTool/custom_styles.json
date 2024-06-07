@@ -1,0 +1,78 @@
+{
+	"0": {
+		"color": 3,
+		"borderRadius": "30px 0 0 30px"
+	},
+
+	"RED": {
+		"rules": {
+			"none": true
+		}
+	},
+
+	"BLACK": {
+		"rules": {
+			"none": true
+		}
+	},
+
+	"ODD": {
+		"rules": {
+			"none": true
+		}
+	},
+
+	"EVEN": {
+		"rules": {
+			"none": true
+		}
+	},
+
+	"ROW1": {
+		"rules": {
+			"none": true
+		}
+	},
+
+	"ROW2": {
+		"rules": {
+			"none": true
+		}
+	},
+
+	"ROW3": {
+		"rules": {
+			"none": true
+		}
+	},
+
+	"1st 12": {
+		"rules": {
+			"up": true
+		}
+	},
+
+	"2nd 12": {
+		"rules": {
+			"up": true
+		}
+	},
+
+	"3rd 12": {
+		"rules": {
+			"up": true
+		}
+	},
+
+	"1to18": {
+		"rules": {
+			"none": true
+		}
+	},
+
+	"19to36": {
+		"rules": {
+			"none": true
+		}
+	}
+}

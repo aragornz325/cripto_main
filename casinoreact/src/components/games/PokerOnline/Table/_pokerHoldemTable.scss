@@ -1,0 +1,131 @@
+.pokerTable {
+    z-index: 10;  
+    width: 60%;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.pokerCards__card {
+    width: 4.5vw;
+    height: 7vw; 
+    position: absolute;
+}
+// dealer 
+.dealer {
+    color: blue;
+
+    &__character {
+        height: 150px;  
+    }
+}
+
+// POT
+.pot {
+    display: flex;
+    gap: .3vw;
+
+    &__text {
+        border: .2vw solid #FFD56A;
+        padding: .5vw;
+        padding-left: .8vw;
+        border-bottom-left-radius: 100px;
+        border-top-left-radius: 100px;
+        color: #FFD56A;
+        box-shadow: 0px 0px 1vw #FFD56A;
+        font-size: 1vw;
+        font-weight: 700;
+    }
+
+    &__money {
+        border: .1vw solid #ffffff;
+        // padding: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 100px;
+        color: #fff;
+        min-width: 7vw;
+        text-align: center;
+        font-size: 1.1vw;
+        font-weight: 500;
+    }
+}
+
+// Cards on the table ( not user cards ).
+.pokerCards {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5vw;
+}
+
+.not-winner-card {
+    opacity: 0.5
+}
+
+
+// Emply card
+.emplyCard {
+    width: 4.5vw;
+    height: 7vw; 
+}
+
+.card-container {
+    width: 4.5vw;
+    height: 7vw; 
+    position: relative;
+    transform-style: preserve-3d;
+    //an animation to rotate the card only once from back to front and stay there.
+    //animation: rotateCard 1s forwards;
+    
+    .card {
+        position: absolute;
+        backface-visibility: hidden;
+    }
+
+    .front {
+        z-index: 0;
+        transform: rotateY(180deg);
+    }
+
+    .back {
+        z-index: 1;
+        background-color: black;
+        border-radius: .3vw;
+    }
+}
+
+.card-container:nth-child(1) {
+    animation: rotateCard 1s forwards;
+}
+
+.card-container:nth-child(2) {
+    animation: rotateCard 1s 0.2s forwards;
+}
+
+.card-container:nth-child(3) {
+    animation: rotateCard 1s 0.4s forwards;
+}
+
+.card-container:nth-child(4) {
+    animation: rotateCard 1s 0.6s forwards;
+}
+
+.card-container:nth-child(5) {
+    animation: rotateCard 1s 0.8s forwards;
+}
+
+@keyframes rotateCard {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}

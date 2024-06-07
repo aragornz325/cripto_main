@@ -1,0 +1,102 @@
+POST http://localhost:4000/api/users
+Content-Type: application/json
+
+{
+    "username": "222",
+    "password": "aa0c8d12686d38a1524df75e69e09512225ee33a75e9a06127a5fddeb960f24d",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "+1 (555) 555-1234"
+}
+
+### 
+
+GET http://localhost:4000/api/users
+
+###
+
+POST http://localhost:4000/poker-holdem/room
+Content-Type: application/json
+
+{
+	"type": "PUBLIC",
+	"entryPrice": 10,
+	"rakeValue": 0.5,
+	"maxPlayers": 5,
+	"startTimeout": 20000,
+	"turnTimeout": 20000
+}
+
+###
+
+GET http://localhost:4000/poker-holdem/room/all
+
+###
+
+GET http://localhost:4000/poker-holdem/room/62f432ca7c7dfa28e9d4dff5
+
+###
+
+PUT http://localhost:4000/poker-holdem/room/join
+Content-Type: application/json
+
+{
+	"userId": "62d1ce4564c2bfc5ce22e89f",
+	"roomId": "62df273148e5cd6466879bc1",
+	"roomBalance": 9999999
+}
+
+###
+
+PUT http://localhost:4000/poker-holdem/room/join
+Content-Type: application/json
+
+{
+	"userId": "62d6eb8e9afb60177da06231",
+	"roomId": "62df273148e5cd6466879bc1",
+	"roomBalance": 9999999
+}
+
+
+###
+
+PUT http://localhost:4000/poker-holdem/room/join
+Content-Type: application/json
+
+{
+	"userId": "62d84b2b4ff37ea608267f21",
+	"roomId": "62df273148e5cd6466879bc1",
+	"roomBalance": 9999999
+}
+
+###
+
+PUT http://localhost:4000/poker-holdem/room/leave
+Content-Type: application/json
+
+{
+	"roomId": "62d70f2713dac5ec55e238ec",
+	"pokerPlayerId": "62d9dd2e08c228a453635a5e"
+}
+
+###
+
+POST http://localhost:4000/poker-holdem/game/start
+Content-Type: application/json
+
+{
+	"roomId": "62df273148e5cd6466879bc1"
+}
+
+###
+
+PUT http://localhost:4000/poker-holdem/game/bet
+Content-Type: application/json
+
+{
+	"roomId": "62db0bc95da618a96b25ee80",
+	"playerId": "62db0dac5da618a96b25ee8d",
+	"betAction": 1,
+	"raiseAmount": 1
+}

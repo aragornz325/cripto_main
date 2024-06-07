@@ -1,0 +1,45 @@
+GET http://localhost:4000/api/users
+
+###
+POST http://localhost:4000/wallets/create
+Content-Type: application/json
+
+{
+    "userId": "62d1ce4564c2bfc5ce22e89f",
+    "walletAddress": "0x62C9511E06b0Aca785e69B5f81c29DF4AfB4F71B",
+    "nickname": "walletssasdst"
+}
+
+###
+
+GET http://localhost:4000/wallets/62d1ce4564c2bfc5ce22e89f
+
+###
+
+POST http://apicasino.herokuapp.com/transactions/order
+Content-Type: application/json
+
+{
+    "userId": "62d1ce4564c2bfc5ce22e89f",
+    "walletAddress": "0x075D29D70FF3d5AD1a2569bba6F581CBf2be7Cee"
+}
+
+###
+
+POST http://localhost:4000/transactions/verify
+Content-Type: application/json
+
+{
+    "txId": "0x101832de78d28ecbc4a2c9f60cde9a66dbb043da925371bca23383ab2b16477c",
+    "orderId": "6331fa881810e20855541440"
+}
+
+###
+POST http://localhost:4000/transactions/withdraw
+Content-Type: application/json
+
+{
+    "walletAddress": "0x62C9511E06b0Aca785e69B5f81c29DF4AfB4F71B", 
+    "userId": "62d1ce4564c2bfc5ce22e89f", 
+    "amount": 20000
+}

@@ -1,0 +1,1 @@
+export const SHOW_TOAST_MODAL = "SHOW_TOAST_MODAL";

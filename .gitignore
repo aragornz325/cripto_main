@@ -1,0 +1,9 @@
+
+casinoreact/public/assets/fichas/drive-download-20211027T183714Z-001.zip
+
+casinoreact/node_modules
+NestJS\ API/node_modules
+# Local Netlify folder
+.netlify
+
+.env
